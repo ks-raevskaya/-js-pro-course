@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+#container{
+    width: 30%;
+    height: 25%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#form, #result{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+#form, #result, #inputValue, #buttonSearch{
+    font-family: 'Mukta';
+}
+#inputValue, #buttonSearch{
+    font-size: 20px;
+}
+#form{
+    margin: 2vw;
+}
+#result{
+    padding-left: 2vw;
+    color:#12656F;
+}
+#text{
+    width: 50%;
+}
+img {
+    width: 30%;
+    height: 25%;
+}
+#inputValue{
+    margin: 0.5vw 1vw;
+    color: #227D88;
+    border:1px solid #167985;
+}
+#buttonSearch{
+    margin: 0.5vw 1vw;
+    padding: 0.5vw 1vw;
+    border: 2px solid #167985;
+    transition: all 300ms ease;
+    color:#167985;
+    box-shadow: 0px 4px 10px 2px rgba(#000, 0.2);
+}
+#buttonSearch:hover{
+      color: #000; 
+      box-shadow:none;
+      border: 2px solid #A1F3FD;
+}
