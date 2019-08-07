@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 #container{
-    width: 30%;
+    /* width: 30%; */
     height: 25%;
     margin: 0 auto;
     display: flex;
@@ -15,32 +15,35 @@
     justify-content: center;
     font-size: 24px;
 }
-#form, #result, #inputValue, #buttonSearch{
+#form, #result, #inputValue, #buttonSearch, #buttonClear{
     font-family: 'Mukta';
 }
-#inputValue, #buttonSearch{
+#inputValue, #buttonSearch, #buttonClear{
     font-size: 20px;
 }
 #form{
     margin: 2vw;
 }
 #result{
-    padding-left: 2vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     color:#12656F;
 }
-#text{
-    width: 50%;
+.weather-container {
+    margin: 1%;
+    display: flex;
 }
 img {
-    width: 30%;
-    height: 25%;
+    width: 25%;
+    height: 30%;
 }
 #inputValue{
     margin: 0.5vw 1vw;
     color: #227D88;
     border:1px solid #167985;
 }
-#buttonSearch{
+#buttonSearch, #buttonClear{
     margin: 0.5vw 1vw;
     padding: 0.5vw 1vw;
     border: 2px solid #167985;
@@ -48,7 +51,7 @@ img {
     color:#167985;
     box-shadow: 0px 4px 10px 2px rgba(#000, 0.2);
 }
-#buttonSearch:hover{
+#buttonSearch:hover, #buttonClear:hover{
       color: #000; 
       box-shadow:none;
       border: 2px solid #A1F3FD;
