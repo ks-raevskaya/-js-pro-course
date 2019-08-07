@@ -1,5 +1,6 @@
 const buttonSearch = document.getElementById('buttonSearch');
 const buttonClear = document.getElementById('buttonClear');
+const myWeather = document.getElementById('myWeather');
 const result = document.getElementById('result');
 const inputValue = document.getElementById('inputValue');
 const config = {
@@ -14,11 +15,17 @@ buttonClear.addEventListener('click', function(event){
     clearWeather();
 });
 
+myWeather.addEventListener('click', function(event){
+    navigator.geolocation.getCurrentPosition(getWeather)
+});
+
 function clearWeather() {
     result.innerHTML = '';
+    localStorage.clear();
 }
 
 function getWeather(value){
+    if (typeof value !== 'string') value = `${value.coords.latitude},${value.coords.longitude}`
     fetch(config.baseUrl + value)
     .then(response => response.json())
     .then((data) => {
@@ -41,6 +48,7 @@ function getWeather(value){
         weatherBlock.appendChild(img);
         weatherBlock.appendChild(p);
         result.appendChild(weatherBlock);
+        inputValue.value = '';
     }).catch((error) => {
         console.error(error);
     })

@@ -15,10 +15,10 @@
     justify-content: center;
     font-size: 24px;
 }
-#form, #result, #inputValue, #buttonSearch, #buttonClear{
+#form, #result, #inputValue, #buttonSearch, #buttonClear, #myWeather{
     font-family: 'Mukta';
 }
-#inputValue, #buttonSearch, #buttonClear{
+#inputValue, #buttonSearch, #buttonClear, #myWeather{
     font-size: 20px;
 }
 #form{
@@ -43,7 +43,7 @@ img {
     color: #227D88;
     border:1px solid #167985;
 }
-#buttonSearch, #buttonClear{
+#buttonSearch, #buttonClear, #myWeather{
     margin: 0.5vw 1vw;
     padding: 0.5vw 1vw;
     border: 2px solid #167985;
@@ -51,7 +51,7 @@ img {
     color:#167985;
     box-shadow: 0px 4px 10px 2px rgba(#000, 0.2);
 }
-#buttonSearch:hover, #buttonClear:hover{
+#buttonSearch:hover, #buttonClear:hover, #myWeather:hover{
       color: #000; 
       box-shadow:none;
       border: 2px solid #A1F3FD;
